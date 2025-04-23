@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordem de Serviço</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>ERP</h2>
+      <nav>
+        <ul>
+          <li>Visão Geral</li>
+          <li><a href="cadastros.html">Cadastros</a></li>
+          <li>Vendas</li>
+          <li>Estoque</li>
+          <li> <a href="financeiro.html">Financeiro</a></li>
+          <li>Atendimento</li>
+          <li>Mensagens</li>
+          <li>Ferramentas</li>
+          <li>Ajuda e Suporte</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header>
+        <div>@ryan</div>
+        <div>Salvo às 11:00</div>
+      </header>
+
+      <section class="form-header">
+        <h1>Ordem de Serviço 1</h1>
+        <div class="actions">
+          <button>SALVAR</button>
+          <button>EXCLUIR</button>
+          <button>IMPRIMIR</button>
+        </div>
+      </section>
+
+      <section class="form-grid">
+        <div><label>Código</label><input type="text" value="1"></div>
+        <div><label>Status</label>
+          <select>
+            <option>ABERTO</option>
+            <option>FECHADO</option>
+          </select>
+        </div>
+        <div><label>Data de Entrada</label><input type="datetime-local" value="2025-04-06T18:31"></div>
+        <div><label>Modalidade</label>
+          <select>
+            <option>PREVENTIVA</option>
+            <option>CORRETIVA</option>
+          </select>
+        </div>
+        <div><label>Funcionário</label><input type="text" value="Ryan Molder"></div>
+      </section>
+
+      <section class="tabs">
+        <button class="active">CLIENTE</button>
+        <button>DESCRIÇÃO</button>
+        <button>SERVIÇOS</button>
+        <button>PRODUTOS</button>
+        <button>PAGAMENTOS</button>
+        <button>CONTRATO</button>
+      </section>
+
+      <section class="cliente-info">
+        <div><label>Cliente</label><input type="text" value="Bruno Souza"></div>
+        <div><label>Código Cliente</label><input type="text" value="1"></div>
+        <div class="client-buttons">
+          <button>Escolher Cliente</button>
+          <button class="danger">Remover Cliente</button>
+        </div>
+        <div><label>Telefone 1</label><input type="text"></div>
+        <div><label>Telefone 2</label><input type="text"></div>
+        <div><label>Celular</label><input type="text"></div>
+        <div><label>Email</label><input type="email"></div>
+        <div><label>CPF/CNPJ</label><input type="text"></div>
+        <div><label>Endereço</label><input type="text"></div>
+        <div class="Abrir-cadastro"><button>Abrir Cadastro</button></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
