@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordem de Serviço</title>
+  <link rel="stylesheet" href="./src/css/ordemservico.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>ERP</h2>
+      <nav>
+        <ul>
+          <li> <a href="index.html">Visão Geral</a></li>
+          <li><a href="cadastros.html">Cadastros</a></li>
+          <li>Vendas</li>
+          <li>Estoque</li>
+          <li> <a href="financeiro.html">Financeiro</a></li>
+          <li>Atendimentos</li>      
+          <li>Mensagens</li>
+          <li>Configurações</li>
+          
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header>
+        <div>@ryan</div>
+        <div>Salvo às 11:00</div>
+      </header>
+
+      <section class="form-header">
+        <h1>Ordem de Serviço</h1>
+        <div class="actions">
+          <button class="voltar"><a href="Atendimentos.html">VOLTAR</a></button>
+       
+        </div>
+      </section>
+
+      <section class="form-grid">
+       
+        <div><label>Serviço solicitado</label>
+          <select>
+            <option>Detetização</option>
+            <option>Limpeza Caixa D'água</option>
+            <option>Desentupimento</option>
+          </select>
+        </div>
+        <div><label>Data de Entrada</label><input type="datetime-local" value="2025-04-06T18:31"></div>
+        
+       <div><label>Forma de Pagamento</label>
+          <select>
+            <option>Débito</option>
+            <option>Crédito</option>
+            <option>PIX</option>
+          </select>
+        </div>
+      </section>
+   
+
+      <section class="cliente-info">
+       
+        <div><label>Cliente</label><input type="text" ></div>
+        
+        <div><label>Telefone 1</label><input type="text"></div>
+        <div><label>Telefone 2</label><input type="text"></div>
+        <div><label>Celular</label><input type="text"></div>
+        <div><label>Email</label><input type="email"></div>
+        <div><label>CPF/CNPJ</label><input type="text"></div>
+        <div><label>Endereço</label><input type="text"></div>
+        <div class="client-buttons">
+          <button><a href="ordemservico.html" class="os_button"> Abrir ordem de serviço</a></button>
+          <button class="danger">Cancelar ordem de serviço</button>
+        </div>
+        
+      </section>
+    </main>
+  </div>
+</body>
+</html>
